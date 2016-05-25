@@ -4,46 +4,12 @@
         
         <title> Countdown Timer </title>
         
-        <style>
-            
-            
-            body {
-                
-              background-image : url("http://s33.postimg.org/fy0bl8rv3/deltabombwithoutimer.jpg") ; 
-              background-position: 60% -10%; 
-                
-            }
-            
-            
-           #timer {
-                
-                text-align: center; 
-                margin-top: 3%;
-                font-family: Century Gothic;
-                
-            } 
-           
-            .timerprop {
-                
-                font-family: Century Gothic;
-                background-color: #ffffff;
-                width : 10%;
-                padding: 20px;
-                border: solid;
-                display:inline-block;
-               
-                
-            }
-            
-        </style>
-        
+        <link rel="stylesheet" type="text/css" href="design.css" >
         
         
     </head>    
     
-    
-    
-    
+        
     <body>
           
         <div id= "timer" >
@@ -75,46 +41,8 @@
             
         
         </div>
-        <script>
-                
-            var launchdate = new Date(2016,5,24,3,02);
-            countdown();
-            
-             var process = setInterval(countdown,1000);
-    
-        
-            function countdown() {
-                
-                 var current = new Date();    
-                 var remainingtime =  Date.parse(launchdate) - Date.parse(current) ;
-                 var time = remainingtime/1000;
-            
-                 var sec = (time)%60 ;
-                 var minutes = (time/60)%60;
-                 var hours = ((time/60)/60)%24;
-                 var days = ((time/60)/60)/24;
-            
-                 
-                      
-               {  document.getElementById("days").innerHTML = Math.floor(days);
-                 document.getElementById("hours").innerHTML = Math.floor(hours);
-                 document.getElementById("minutes").innerHTML = Math.floor(minutes);
-                 document.getElementById("seconds").innerHTML = Math.floor(sec);
-               }
-                
-                if(remainingtime<=0)
-                    {
-                        clearInterval(process);
-                        
-                                                
-                    }
-            
-            
-        }
-            
-        
-          
-       </script>
+       
+        <script src="jscript.js"> </script>
 
     </body>
 </html>

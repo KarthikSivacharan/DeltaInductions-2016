@@ -1,0 +1,60 @@
+        
+            
+            body {
+                
+              background-image : url("deltabombwithoutimer.jpg") ; 
+              background-repeat: no-repeat;
+              background-position: center center fixed;
+              background-size: cover; 
+                
+            }
+            
+            
+           #timer {
+                
+                text-align: center; 
+                margin-top: 3%;
+                font-family: Century Gothic;
+                
+            } 
+           
+           .timerprop {
+                
+                font-family: Century Gothic;
+                background-color: #ffffff;
+                width : 10%;
+                padding: 20px;
+                border: solid;
+                display:inline-block;
+               
+                
+            }
+        
+        
+            #launch {
+            
+            font-family: Century Gothic;
+            font-size : 50px;
+            
+            }
+        
+        
+            
+           #launchinput {
+            
+            text-align: center;
+            }  
+        
+        
+            #btn {
+            
+            width:150px;
+            height : 60px;
+            margin :20px;
+            font-size :30px;
+            font-family: Century Gothic;
+            }  
+            
+        
+        
+    

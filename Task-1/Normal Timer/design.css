@@ -1,0 +1,31 @@
+            
+            
+            body {
+                
+              background-image : url("http://s33.postimg.org/fy0bl8rv3/deltabombwithoutimer.jpg") ; 
+              background-position: 60% -10%; 
+                
+            }
+            
+            
+           #timer {
+                
+                text-align: center; 
+                margin-top: 3%;
+                font-family: Century Gothic;
+                
+            } 
+           
+            .timerprop {
+                
+                font-family: Century Gothic;
+                background-color: #ffffff;
+                width : 10%;
+                padding: 20px;
+                border: solid;
+                display:inline-block;
+               
+                
+            }
+            
+        
