@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title> Countdown Timer </title>
+        
+        <style>
+            
+            
+            body {
+                
+              background-image : url("http://s33.postimg.org/fy0bl8rv3/deltabombwithoutimer.jpg") ; 
+              background-position: 60% -10%; 
+                
+            }
+            
+            
+           #timer {
+                
+                text-align: center; 
+                margin-top: 3%;
+                font-family: Century Gothic;
+                
+            } 
+           
+            .timerprop {
+                
+                font-family: Century Gothic;
+                background-color: #ffffff;
+                width : 10%;
+                padding: 20px;
+                border: solid;
+                display:inline-block;
+               
+                
+            }
+            
+        </style>
+        
+        
+        
+    </head>    
+    
+    
+    
+    
+    <body>
+          
+        <div id= "timer" >
+            
+             <h1> The Bomb Explodes in : </h1>
+            <div class="timerprop" >
+                <h1> Days </h1>
+                <p id ="days"></p>
+                
+            </div>
+            
+            <div class = "timerprop">
+                <h1> Hours </h1>
+                <p id="hours"></p>
+                
+            </div>
+            
+            <div class = "timerprop"> 
+                <h1> Minutes </h1>
+                <p id="minutes"></p> 
+                
+            </div>
+            
+            <div class = "timerprop">
+                <h1> Seconds </h1>
+                <p id="seconds"></p>
+                
+            </div>
+            
+        
+        </div>
+        <script>
+                
+            var launchdate = new Date(2016,5,24,3,02);
+            countdown();
+            
+             var process = setInterval(countdown,1000);
+    
+        
+            function countdown() {
+                
+                 var current = new Date();    
+                 var remainingtime =  Date.parse(launchdate) - Date.parse(current) ;
+                 var time = remainingtime/1000;
+            
+                 var sec = (time)%60 ;
+                 var minutes = (time/60)%60;
+                 var hours = ((time/60)/60)%24;
+                 var days = ((time/60)/60)/24;
+            
+                 
+                      
+               {  document.getElementById("days").innerHTML = Math.floor(days);
+                 document.getElementById("hours").innerHTML = Math.floor(hours);
+                 document.getElementById("minutes").innerHTML = Math.floor(minutes);
+                 document.getElementById("seconds").innerHTML = Math.floor(sec);
+               }
+                
+                if(remainingtime<=0)
+                    {
+                        clearInterval(process);
+                        
+                                                
+                    }
+            
+            
+        }
+            
+        
+          
+       </script>
+
+    </body>
+</html>
