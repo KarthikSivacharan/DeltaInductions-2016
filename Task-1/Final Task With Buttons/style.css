@@ -1,0 +1,71 @@
+    
+        body {
+            
+            background-image : url("http://www.flatvsrealism.com/images/char1.png");
+            background-position: center center fixed ;
+            background-size: cover;
+        }
+        
+        
+        #getinput {
+            text-align: center;
+            padding:30px;
+            margin:auto;
+        }
+        
+        .time {
+            
+            width:200px;
+            font-family: Century Gothic;
+            font-size: 30px;
+        }
+        
+        #submit {
+            
+            font-family: Century Gothic;
+            font-size :35px;
+            padding:10px;
+            margin:10px;
+            
+        }
+        
+        #timerprop {
+            
+            width :130px;
+            border-style: solid;
+            padding:10px;
+            display:inline-block;
+            text-align: center;
+            font-family: Century Gothic;
+            
+        }
+        
+        #timer {
+            
+        text-align: center;
+        margin-top: 80px;
+        }
+        
+        #buttons {
+            
+            text-align: center;
+            padding: 50px;
+        }
+        
+        
+        #buttonprop {
+            
+            font-family: helvetica;
+            font-size: 25px;
+            display:inline-block;
+            padding: 15px 30px;
+            margin: 15px;
+            border: 4px solid #ff0000;
+            background-color :#ffffff;
+        
+        }
+        
+    
+    
+    
+    
