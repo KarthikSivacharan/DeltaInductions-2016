@@ -4,11 +4,13 @@
             
             function input() {
                 
+                var dys = document.getElementById("days").value;
                 var hrs = document.getElementById("hrs").value;
                 var min = document.getElementById("min").value;
                 var sec = document.getElementById("sec").value;
                 
-                 convert = (hrs*60*60)  + (min*60)  + 1*sec;
+                 convert = (dys*24*60*60) + (hrs*60*60) + (min*60)  + (1*sec);
+               // document.getElementById("demo").innerHTML = convert; -- to print and check values
                 
             }
             
@@ -21,7 +23,10 @@
                                        
                         var convsec = (convert%60);
                         var convmin = (convert/60)%60;
-                        var convhrs = (convert/60)/60;
+                        var convhrs = ((convert/60)/60)%24;
+                        var convdays = ((convert/60)/60)/24;
+                    
+                        document.getElementById("Days").innerHTML = Math.floor(convdays);
                         document.getElementById("hours").innerHTML = Math.floor(convhrs);
                         document.getElementById("minutes").innerHTML = Math.floor(convmin);
                         document.getElementById("seconds").innerHTML = Math.floor(convsec);
@@ -48,6 +53,7 @@
             {
                 flag = 0;
                 clearInterval(d);
+                document.getElementById("Days").innerHTML = 00 ;
                 document.getElementById("hours").innerHTML = 00 ;
                 document.getElementById("minutes").innerHTML = 00 ;
                 document.getElementById("seconds").innerHTML = 00 ;
