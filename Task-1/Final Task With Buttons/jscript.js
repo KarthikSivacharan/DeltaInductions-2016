@@ -16,7 +16,7 @@
             
             function countdown() {
                 
-                if(flag == 1)
+                if(flag == 1 && convert >= 0)
                    
                 {
  
