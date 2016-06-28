@@ -1,1 +1,9 @@
+
+index.php - Contains the Forms to get Input for Name , Email etc.,
+signupuser.php - gets Image from the User.
+loginuser - Displays success message & Gets Login Details.
+Home - Displays the info given by the user. 
+
+
+
 delta is the name of the database i have used & users is the table i have created !

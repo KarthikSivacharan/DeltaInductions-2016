@@ -4,74 +4,7 @@
     
             <title> SignUp Complete </title>
         
-            <style>
-        
-        
-                 button {
-                    
-                    font-family: Century Gothic;
-                    font-size: 25px;
-                    padding:10px 20px 10px 20px;
-                    border: none;
-                    text-align: center;
-                    background-color: #ff6600;
-                    color:#ffffff;
-                    margin:10px;
-                    cursor: pointer;
-                    
-                }
-                
-                 h1, h2 {
-              
-                font-family: Century Gothic;
-                margin:5px;
-                
-            }
-        
-                #login {
-                    
-                    
-                    font-family: Century Gothic;
-                    text-align: center;
-                    margin: auto;
-                    margin-top: 100px;
-                    background-color:#ffffff;
-                    width:600px;
-                    padding:20px;
-                }
-                
-                
-            body{
-                
-                background-image: url("blue_spots_background_monochrome_69084_2048x1152.jpg");
-               
-                
-            }
-                 input {
-                    
-                    height:40px;
-                    font-family: Century Gothic;
-                    font-size: 20px;
-                    display: inline-block;
-                    margin: 30px;
-                    text-align: center;
-                    
-                }
-        
-                form {
-                    
-                    font-family: Century Gothic;
-                    font-size: 25px;
-                }
-                
-                #error {
-                    
-                    font-family: Century Gothic;
-                    font-size: 20px;
-                    color:#ff0000;
-                }
-        
-            </style>
+            <link rel="stylesheet" type="text/css" href="loginuser.css">
     
     </head>
 
@@ -149,7 +82,7 @@
           <h2> Login In To Continue. </h2>  
           <h2 id="error"><?php echo $_SESSION['error']; ?></h2>
 
-          <form action="login.php" method="post">
+          <form action="home.php" method="post">
                
               <input type="email" name="LoginUsername" placeholder="Email" required />
               <input type="password" name="LoginPassword" placeholder="Password" required />

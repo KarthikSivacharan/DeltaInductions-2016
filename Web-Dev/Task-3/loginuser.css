@@ -1,0 +1,66 @@
+    
+        
+                 button {
+                    
+                    font-family: Century Gothic;
+                    font-size: 25px;
+                    padding:10px 20px 10px 20px;
+                    border: none;
+                    text-align: center;
+                    background-color: #ff6600;
+                    color:#ffffff;
+                    margin:10px;
+                    cursor: pointer;
+                    
+                }
+                
+                 h1, h2 {
+              
+                font-family: Century Gothic;
+                margin:5px;
+                
+            }
+        
+                #login {
+                    
+                    
+                    font-family: Century Gothic;
+                    text-align: center;
+                    margin: auto;
+                    margin-top: 100px;
+                    background-color:#ffffff;
+                    width:600px;
+                    padding:20px;
+                }
+                
+                
+            body{
+                
+                background-image: url("blue_spots_background_monochrome_69084_2048x1152.jpg");
+               
+                
+            }
+                 input {
+                    
+                    height:40px;
+                    font-family: Century Gothic;
+                    font-size: 20px;
+                    display: inline-block;
+                    margin: 30px;
+                    text-align: center;
+                    
+                }
+        
+                form {
+                    
+                    font-family: Century Gothic;
+                    font-size: 25px;
+                }
+                
+                #error {
+                    
+                    font-family: Century Gothic;
+                    font-size: 20px;
+                    color:#ff0000;
+                }
+        

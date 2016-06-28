@@ -60,63 +60,7 @@
         
         <title><?php echo $row['firstname']; ?></title>
         
-        <style>
-        
-        
-            body {
-                
-                background-color: #03a9f4;
-            }
-            
-            #details {
-                
-                
-                background-color: #ffffff;
-                width:450px;
-                height: 550px;
-                text-align: center;
-                float: right;
-                margin-top:5% ;
-                margin-right:10%;
-            }
-        
-           h1 {
-                
-                font-family: Century Gothic;
-                padding:5px;
-                
-            }
-            h2 {
-                
-                font-family: Century Gothic;
-                padding:5px;
-                color:#ff6600;
-                
-            }
-            
-            img {
-                
-                width:400px;
-                height:400px;
-                margin-top: 40px;
-
-            }
-            
-            #image {
-                
-                background-color: #ffffff;
-                float:left;
-                margin-top: 5%;
-                margin-left:10%;
-                width:450px;
-                height: 550px;
-                text-align: center;
-                
-                
-            }
-            
-            
-        </style>
+        <link rel="stylesheet" type="text/css" href="home.css">
         
     </head>
     
