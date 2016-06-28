@@ -42,7 +42,7 @@
         else 
         {    
             $_SESSION['error']="Oops! Invalid Details - Try Again!";
-            header('location:signup.php');
+            header('location:loginuser.php');
             
         }
         
